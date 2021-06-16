@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&family=sans-serif&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: steelblue;
+  background-color: fff;
   color: #fff;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +18,8 @@ body {
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
+  background-color: #091638;
+  padding: 80px 40px;
   border-radius: 5px;
 }
 
@@ -69,7 +69,7 @@ body {
   border-bottom: 2px #fff solid;
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 25px 0;
   font-size: 18px;
   color: #fff;
 }
@@ -97,4 +97,20 @@ body {
 .form-control input:valid + label span {
   color: lightblue;
   transform: translateY(-30px);
+}
+
+::selection {
+  background: #fff; /*Secondary color*/
+  color: #091638;
+}
+
+::-moz-selection {
+  background: #fff; /*Secondary color*/
+  color: #091638;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 100% 100%;
+  }
 }
